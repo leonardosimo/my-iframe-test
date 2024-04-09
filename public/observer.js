@@ -12,7 +12,7 @@
                         }
                     }
                     // win.parent.top.
-                    win?.parent.top?.postMessage(send, "http://localhost:3001/")
+                    win?.parent.top?.postMessage(send, "https://my-app-main.vercel.app/")
                 }
             }
         });
