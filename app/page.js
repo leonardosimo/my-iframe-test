@@ -4,7 +4,7 @@ import { ComponenteScript } from "../components/ComponenteScript";
 export default function Home() {
   return (
     <main className={styles.main} >
-        <ComponenteScript />
+      <ComponenteScript />
     </main>
   );
 }

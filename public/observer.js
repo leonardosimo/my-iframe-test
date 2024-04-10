@@ -7,12 +7,18 @@
                     const heightContent = entry.borderBoxSize[0].blockSize;
                     // console.log("heightContent", heightContent);
                     const send = {
-                        detalleHtml: {
+                        detail: {
                             height: heightContent
                         }
                     }
+                    console.log(send);
                     // win.parent.top.
-                    win?.parent.top?.postMessage(send, "https://my-app-main.vercel.app/")
+                 
+                    const event = new CustomEvent('myCustomEvent', send);
+                    
+                    win?.parent.top?.dispatchEvent(event);
+                    
+                    // win?.parent.top?.postMessage(send, "http://localhost:3001/")
                 }
             }
         });
