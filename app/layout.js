@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { BotonesGrupo } from "@/components/Botones";
-// import { NextScript } from "next/document";
-
+import Script from 'next/script'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,9 +16,9 @@ export default function RootLayout({ children }) {
         <BotonesGrupo />
 
         {children}
-        {/* <NextScript /> */}
-        <script src="./sdk-at-call.js"></script>
-        <script src="./observer.js" />
+        <Script src="/sdk-at-call.js" />
+        <Script src="/observer.js" />
+
       </body>
 
 
