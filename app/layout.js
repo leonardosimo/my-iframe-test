@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
 
         {children}
         {/* <NextScript /> */}
+        <script src="./sdk-at-call.js"></script>
         <script src="./observer.js" />
       </body>
 
